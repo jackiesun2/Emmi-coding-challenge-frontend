@@ -1,14 +1,14 @@
 import "./../stylesheets/App.css";
-import Ticket from "./Ticket";
 import IssueList from "./IssueList";
+import FormDialog from "./TicketForm";
 
 function App() {
   return (
     <div className="App">
-      <h1>Hello World</h1>
+      <h1>Issue Tracker App</h1>
+      <FormDialog />
       <IssueList title={"Current Issues"} />
-      <IssueList title={"Archived Issues"} />
-      <Ticket />
+      {/* <IssueList title={"Archived Issues"} /> */}
     </div>
   );
 }
